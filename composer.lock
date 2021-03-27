@@ -4,8 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b85c50d9dfce72073caaa240e0e534b6",
+    "content-hash": "2d0920ba17864c397490a6420daf9f6a",
     "packages": [
+        {
+            "name": "beberlei/assert",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beberlei/assert.git",
+                "reference": "5367e3895976b49704ae671f75bc5f0ba1b986ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beberlei/assert/zipball/5367e3895976b49704ae671f75bc5f0ba1b986ab",
+                "reference": "5367e3895976b49704ae671f75bc5f0ba1b986ab",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "php": "^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "*",
+                "phpstan/phpstan": "*",
+                "phpunit/phpunit": ">=6.0.0",
+                "yoast/phpunit-polyfills": "^0.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Assert\\": "lib/Assert"
+                },
+                "files": [
+                    "lib/Assert/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Richard Quadling",
+                    "email": "rquadling@gmail.com",
+                    "role": "Collaborator"
+                }
+            ],
+            "description": "Thin assertion library for input validation in business models.",
+            "keywords": [
+                "assert",
+                "assertion",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/beberlei/assert/issues",
+                "source": "https://github.com/beberlei/assert/tree/v3.3.0"
+            },
+            "time": "2020-11-13T20:02:54+00:00"
+        },
         {
             "name": "doctrine/annotations",
             "version": "1.12.1",
@@ -155,6 +220,114 @@
                 }
             ],
             "time": "2020-05-25T17:44:05+00:00"
+        },
+        {
+            "name": "k911/swoole-bundle",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/k911/swoole-bundle.git",
+                "reference": "01e6ca1de2b25d8e86597884cc6456fdf43b4cab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/k911/swoole-bundle/zipball/01e6ca1de2b25d8e86597884cc6456fdf43b4cab",
+                "reference": "01e6ca1de2b25d8e86597884cc6456fdf43b4cab",
+                "shasum": ""
+            },
+            "require": {
+                "beberlei/assert": "^3.0",
+                "ext-json": "*",
+                "ext-swoole": "^4.5.10",
+                "php": "^7.4|^8.0",
+                "symfony/config": "^4.3.1|^5.0",
+                "symfony/console": "^4.3.1|^5.0",
+                "symfony/dependency-injection": "^4.3.1|^5.0",
+                "symfony/http-foundation": "^4.3.1|^5.0",
+                "symfony/http-kernel": "^4.3.1|^5.0",
+                "symfony/process": "^4.3.1|^5.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.6",
+                "doctrine/orm": "^2.6.3",
+                "friendsofphp/php-cs-fixer": "^2.18.2",
+                "jangregor/phpstan-prophecy": "^0.8.0",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/extension-installer": "^1.0.2",
+                "phpstan/phpstan": "^0.12.28",
+                "phpstan/phpstan-beberlei-assert": "^0.12.2",
+                "phpstan/phpstan-doctrine": "^0.12.9",
+                "phpstan/phpstan-phpunit": "^0.12.6",
+                "phpunit/php-code-coverage": "^9.1.0",
+                "phpunit/phpcov": "^8.1.0",
+                "phpunit/phpunit": "^9.1.3",
+                "swoole/ide-helper": "^4.5.10",
+                "symfony/debug-pack": "^1.0",
+                "symfony/error-handler": "^4.3.1|^5.0",
+                "symfony/framework-bundle": "^4.3.1|^5.0",
+                "symfony/messenger": "^4.3.1|^5.0",
+                "symfony/monolog-bridge": "^4.3.1|^5.0",
+                "symfony/monolog-bundle": "^3.3",
+                "symfony/profiler-pack": "^1.0",
+                "symfony/twig-bundle": "^4.3.1|^5.0",
+                "symfony/var-dumper": "^4.3.1|^5.0",
+                "symfony/yaml": "^4.3.1|^5.0",
+                "upscale/swoole-blackfire": "^3.0"
+            },
+            "suggest": {
+                "doctrine/orm": "For using Entity Manager Handler",
+                "ext-inotify": "To enable HMR",
+                "pixelfederation/doctrine-resettable-em-bundle": "To be able to recover Doctrine Entity Managers from errors",
+                "symfony/error-handler": "To use Symfony Error Handler",
+                "symfony/messenger": "For using Symfony Messenger Swoole Task Transport.",
+                "upscale/swoole-blackfire": "To enable Blackfire profiling"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "v0.8.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "K911\\Swoole\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konrad Obal",
+                    "email": "konrad.obal@gmail.com",
+                    "homepage": "https://github.com/k911"
+                }
+            ],
+            "description": "Swoole Symfony Bundle",
+            "homepage": "https://github.com/k911/swoole-bundle",
+            "keywords": [
+                "async",
+                "bundle",
+                "http",
+                "php",
+                "server",
+                "swoole"
+            ],
+            "support": {
+                "issues": "https://github.com/k911/swoole-bundle/issues",
+                "source": "https://github.com/k911/swoole-bundle/tree/v0.9.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/k911",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-02-07T22:57:07+00:00"
         },
         {
             "name": "psr/cache",
@@ -2248,6 +2421,68 @@
                 }
             ],
             "time": "2021-01-07T16:49:33+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v5.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
+                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Executes commands in sub-processes",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v5.2.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-27T10:15:41+00:00"
         },
         {
             "name": "symfony/routing",

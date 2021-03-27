@@ -7,6 +7,7 @@
         "php": ">=8.0.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "k911/swoole-bundle": "^0.9.0",
         "sensio/framework-extra-bundle": "^6.1",
         "symfony/console": "5.2.*",
         "symfony/dotenv": "5.2.*",
